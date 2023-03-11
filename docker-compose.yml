@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  v2fly:
+    image: ghcr.io/internet24/v2fly-core:v4.45.2
+    restart: always
+    network_mode: "host"
+    volumes:
+      - ./config/:/etc/v2ray/
+      - ./logs:/var/log/v2ray/

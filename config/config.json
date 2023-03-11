@@ -1,0 +1,35 @@
+{
+  "log": {
+    "loglevel": "warning",
+    "access": "/var/log/v2ray/access.log",
+    "error": "/var/log/v2ray/error.log"
+  },
+  "outbounds": [
+    {
+      "protocol": "freedom",
+      "tag": "freedom"
+    }
+  ],
+  "inbounds": [
+    {
+      "listen": "0.0.0.0",
+      "protocol": "dokodemo-door",
+      "port": 11,
+      "settings": {
+        "address": "11.1.1.1",
+        "port": 11,
+        "network": "tcp,udp"
+      }
+    },
+    {
+      "listen": "0.0.0.0",
+      "protocol": "dokodemo-door",
+      "port": 22,
+      "settings": {
+        "address": "22.2.2.2",
+        "port": 22,
+        "network": "tcp,udp"
+      }
+    }
+  ]
+}
