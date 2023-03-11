@@ -38,7 +38,7 @@ Follow these steps to run a V2Ray proxy as the proxy relay server.
     1. `Enter number of upstream servers:`: Number of upstream servers to set up.
     2. `Enter server #i IP address:`: The i-th server IP address.
     3. `Enter server #i port number: `: The i-th server port number.
-4. Run `docker-compose up -d`.
+4. Run `docker-compose up -d` or `docker compose up -d`.
 5. Replace upstream server IP in proxy links with relay server IP.
 
 ### Docker images
